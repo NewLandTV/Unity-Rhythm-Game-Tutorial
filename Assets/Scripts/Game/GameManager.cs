@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
 
         while (true)
         {
+            SoundManager.Instance.PlaySFX("Beat");
+
             noteManager.DropNote();
 
             yield return notePerSecond;
@@ -68,6 +70,8 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+
+        SoundManager.Instance.PlaySFX("Judge");
 
         JudgementResult result = noteManager.GetJudgementResultOfNearestNote();
 

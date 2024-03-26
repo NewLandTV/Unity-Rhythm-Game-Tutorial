@@ -17,6 +17,7 @@ public class Result : MonoBehaviour
 
     public void GoLobby()
     {
+        SoundManager.Instance.PlaySFX("Button Click");
         Loading.LoadScene(Scene.Lobby);
     }
 }

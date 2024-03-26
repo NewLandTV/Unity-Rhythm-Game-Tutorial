@@ -72,6 +72,7 @@ public class StageUI : MonoBehaviour
 
     public void GamePlay()
     {
+        SoundManager.Instance.PlaySFX("Button Click");
         SoundManager.Instance.StopBGM();
         Loading.LoadScene(Scene.Game);
     }

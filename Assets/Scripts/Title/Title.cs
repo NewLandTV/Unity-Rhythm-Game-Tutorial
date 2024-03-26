@@ -9,6 +9,7 @@ public class Title : MonoBehaviour
 
     public void StartGame()
     {
+        SoundManager.Instance.PlaySFX("Button Click");
         SoundManager.Instance.StopBGM();
         Loading.LoadScene(Scene.Lobby);
     }

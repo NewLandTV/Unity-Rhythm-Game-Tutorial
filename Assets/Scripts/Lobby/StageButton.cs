@@ -17,6 +17,7 @@ public class StageButton : MonoBehaviour
     public void Setup(Stage stage, Action onButtonClick)
     {
         button.onClick.RemoveAllListeners();
+        button.onClick.AddListener(() => SoundManager.Instance.PlaySFX("Button Click"));
         button.onClick.AddListener(() => onButtonClick?.Invoke());
 
         bgmName.text = stage.bgmName;
