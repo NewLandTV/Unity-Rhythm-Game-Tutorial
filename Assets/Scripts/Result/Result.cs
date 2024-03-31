@@ -22,6 +22,7 @@ public class Result : MonoBehaviour
         SoundManager.Instance.PlaySFX("Stage Clear");
 
         totalScore.text = $"{score:n0}";
+        score = 0;
     }
 
     public void GoLobby()
