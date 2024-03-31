@@ -10,6 +10,15 @@ public class Result : MonoBehaviour
 
     private void Start()
     {
+        int id = CurrentStage.data.id;
+        bool contains = DataManager.Instance.ContainsBestScore(id);
+
+        if (!contains || DataManager.Instance.GetBestScore(id) < score)
+        {
+            DataManager.Instance.SetBestScore(id, score);
+        }
+
+        DataManager.Instance.Save();
         SoundManager.Instance.PlaySFX("Stage Clear");
 
         totalScore.text = $"{score:n0}";

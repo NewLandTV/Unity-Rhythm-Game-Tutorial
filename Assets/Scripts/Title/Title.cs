@@ -4,6 +4,7 @@ public class Title : MonoBehaviour
 {
     private void Start()
     {
+        DataManager.Instance.Load();
         SoundManager.Instance.PlayBGM("AxR", true);
     }
 

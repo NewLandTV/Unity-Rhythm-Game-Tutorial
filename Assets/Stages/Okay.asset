@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09101b890ae4f114984e8edbe4a75237, type: 3}
   m_Name: Okay
   m_EditorClassIdentifier: 
+  id: 1
   bgmName: Okay
   artistName: NewLand Music Artist
   creatorName: JkhTV

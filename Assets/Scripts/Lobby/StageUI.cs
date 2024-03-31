@@ -19,6 +19,8 @@ public class StageUI : MonoBehaviour
     private TextMeshProUGUI infoArtistBgmName;
     [SerializeField]
     private TextMeshProUGUI infoCreatorName;
+    [SerializeField]
+    private TextMeshProUGUI bestScore;
 
     private void Awake()
     {
@@ -66,6 +68,15 @@ public class StageUI : MonoBehaviour
 
         infoArtistBgmName.text = $"{stage.artistName} - {stage.bgmName}";
         infoCreatorName.text = stage.creatorName;
+
+        if (DataManager.Instance.ContainsBestScore(stage.id))
+        {
+            bestScore.text = $"BEST SCORE : {DataManager.Instance.GetBestScore(stage.id):n0}";
+        }
+        else
+        {
+            bestScore.text = "BEST SCORE : -";
+        }
 
         infoGroup.SetActive(true);
     }

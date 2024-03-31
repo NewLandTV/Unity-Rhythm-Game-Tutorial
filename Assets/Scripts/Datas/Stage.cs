@@ -4,6 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "My Stage", menuName = "New Stage")]
 public class Stage : ScriptableObject
 {
+    public int id;
     public string bgmName;
     public string artistName;
     public string creatorName;
