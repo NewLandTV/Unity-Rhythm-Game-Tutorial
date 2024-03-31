@@ -30,6 +30,14 @@ public class GameManager : MonoBehaviour
         yield return HideTitleGroup();
 
         start = true;
+
+        if (CurrentStage.data.noteDropTimes != null && CurrentStage.data.noteDropTimes.Length > 0)
+        {
+            StartCoroutine(DropNotes());
+
+            yield break;
+        }
+
         notePerSecond = new WaitForSeconds(60f / CurrentStage.data.bpm);
 
         while (true)
@@ -45,6 +53,33 @@ public class GameManager : MonoBehaviour
     private void LateUpdate()
     {
         totalScore.text = $"SCORE {Result.score:n0}";
+    }
+
+    private IEnumerator DropNotes()
+    {
+        int index = 0;
+        float currentTime = 0f;
+
+        while (true)
+        {
+            if (currentTime >= CurrentStage.data.noteDropTimes[index])
+            {
+                index++;
+
+                if (CurrentStage.data.noteDropTimes.Length <= index)
+                {
+                    yield break;
+                }
+
+                SoundManager.Instance.PlaySFX("Beat");
+
+                noteManager.DropNote();
+            }
+
+            currentTime += Time.deltaTime;
+
+            yield return null;
+        }
     }
 
     public void ShowTitleGroup(string message)
