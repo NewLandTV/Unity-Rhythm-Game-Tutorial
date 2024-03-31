@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI totalScore;
+    [SerializeField]
+    private TextMeshProUGUI judgeText;
 
     private bool start;
 
@@ -74,6 +76,8 @@ public class GameManager : MonoBehaviour
         SoundManager.Instance.PlaySFX("Judge");
 
         JudgementResult result = noteManager.GetJudgementResultOfNearestNote();
+
+        judgeText.text = $"{result}";
 
         switch (result)
         {
