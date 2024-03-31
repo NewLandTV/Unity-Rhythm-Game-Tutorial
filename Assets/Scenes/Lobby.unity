@@ -725,6 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stages:
   - {fileID: 11400000, guid: ac2c1d7b91eda6d4bb1e1f043b46dde4, type: 2}
+  - {fileID: 11400000, guid: 870b08e00171e864594a102e933bbe78, type: 2}
 --- !u!114 &504944453
 MonoBehaviour:
   m_ObjectHideFlags: 0

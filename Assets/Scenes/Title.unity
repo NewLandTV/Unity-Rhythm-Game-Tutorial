@@ -1576,6 +1576,8 @@ MonoBehaviour:
   bgmSounds:
   - name: AxR
     clip: {fileID: 8300000, guid: f1ce021f22b1dc5409f4a7185b6113a1, type: 3}
+  - name: Okay
+    clip: {fileID: 8300000, guid: 73f5bf1199dbabd489e81d6a17a8b8ee, type: 3}
   sfxSounds:
   - name: Beat
     clip: {fileID: 8300000, guid: 948479236d1dd054c8ec734457016f8d, type: 3}
