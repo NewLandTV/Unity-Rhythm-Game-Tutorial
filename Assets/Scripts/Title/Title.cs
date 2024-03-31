@@ -1,7 +1,16 @@
+using TMPro;
 using UnityEngine;
 
 public class Title : MonoBehaviour
 {
+    [SerializeField]
+    private TextMeshProUGUI version;
+
+    private void Awake()
+    {
+        version.text = $"v{Application.version}";
+    }
+
     private void Start()
     {
         DataManager.Instance.Load();
