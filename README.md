@@ -14,7 +14,7 @@ Rhythm Game(리듬 게임), Unity Tutorial(유니티 튜토리얼), Computer Gam
 
 # **Final Result(최총 결과)**
 
-[Unity Rhythm Game Tutorial - Final Result](아직 없음)
+[Unity Rhythm Game Tutorial - Final Result](https://www.youtube.com/watch?v=Uamz2DNswko)
 
 # **Getting Started(시작하기)**
 
