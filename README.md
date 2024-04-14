@@ -22,6 +22,8 @@ Rhythm Game(리듬 게임), Unity Tutorial(유니티 튜토리얼), Computer Gam
 
 유니티 프로젝트를 2D URP 템플릿으로 생성합니다. 이후에는 강좌 영상을 ....
 
+**[강좌에 필요한 유니티 패키지 다운로드(Itch.io)](https://d-jangkhtv.itch.io/rhythm-hunter-package)**
+
 # **Links(링크)**
 
 * [JkhTV YouTube(장경혁tv)](https://www.youtube.com/@NewLand2019-JkhTV)
